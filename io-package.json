@@ -1,0 +1,76 @@
+{
+	"common": {
+		"name": "pfsense",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			}
+		},
+		"title": "pfsense",
+		"titleLang": {
+			"en": "pfsense",
+			"de": "pfsinn",
+			"ru": "пфсенсе",
+			"pt": "pfsense",
+			"nl": "pfsense",
+			"fr": "pfsense",
+			"it": "pfsense",
+			"es": "sentido pf",
+			"pl": "pfsense",
+			"zh-cn": "感知"
+		},
+		"desc": {
+			"en": "pfsense firewall integration",
+			"de": "pfsense-Firewall-Integration",
+			"ru": "интеграция с межсетевым экраном pfsense",
+			"pt": "integração de firewall pfsense",
+			"nl": "pfsense firewall-integratie",
+			"fr": "Intégration du pare-feu pfsense",
+			"it": "Integrazione del firewall pfsense",
+			"es": "integración del cortafuegos pfsense",
+			"pl": "integracja z firewallem pfsense",
+			"zh-cn": "pfsense 防火墙集成"
+		},
+		"authors": [
+			"Thorsten Reichelt <mail@thorstenreichelt.de>"
+		],
+		"keywords": [
+			"pfsense firewall network"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "main.js",
+		"icon": "pfsense.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/thost96/ioBroker.pfsense/main/admin/pfsense.png",
+		"readme": "https://github.com/thost96/ioBroker.pfsense/blob/main/README.md",
+		"loglevel": "info",
+		"mode": "daemon",
+		"type": "infrastructure",
+		"compact": true,
+		"connectionType": "local",
+		"dataSource": "poll",
+		"materialize": true,
+		"dependencies": [
+			{
+				"js-controller": ">=2.0.0"
+			}
+		]
+	},
+	"native": {
+		"option1": true,
+		"option2": "42"
+	},
+	"objects": [],
+	"instanceObjects": []
+}
