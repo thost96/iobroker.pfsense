@@ -1,3 +1,3 @@
 node_modules/**
-admin/.watch
+admin\.watch
 .dev-server/
