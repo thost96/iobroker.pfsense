@@ -1,0 +1,4 @@
+node_modules/**
+.gitignore
+.dev-server
+admin/.watch

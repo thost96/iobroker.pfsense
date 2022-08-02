@@ -1,15 +1,6 @@
 "use strict";
 
-/*
- * Created with @iobroker/create-adapter v2.1.0
- */
-
-// The adapter-core module gives you access to the core ioBroker functions
-// you need to create an adapter
 const utils = require("@iobroker/adapter-core");
-
-// Load your modules here, e.g.:
-// const fs = require("fs");
 
 class Pfsense extends utils.Adapter {
 
@@ -32,12 +23,15 @@ class Pfsense extends utils.Adapter {
 	 * Is called when databases are connected and adapter received configuration.
 	 */
 	async onReady() {
-		// Initialize your adapter here
-
-		// The adapters config (in the instance object everything under the attribute "native") is accessible via
-		// this.config:
-		this.log.info("config option1: " + this.config.option1);
-		this.log.info("config option2: " + this.config.option2);
+		var passpresent = "";
+		this.log.debug("pfsense hostname: " + this.config.hostname);
+		this.log.debug("pfsense user: " + this.config.username);
+		if(this.config.password) {
+			passpresent = "true"}
+		else {
+			passpresent = "false"
+		};
+		this.log.debug("pfsense password set: " + passpresent);
 
 		/*
 		For every state in the system there has to be also an object of type state
